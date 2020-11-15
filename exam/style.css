@@ -15,6 +15,8 @@
 
 .header {
   background-image: url("image/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -151,16 +153,17 @@
   justify-content: space-between;
   padding-bottom: 132px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 700px) {
   .choose__inner {
     flex-direction: column;
+    padding-bottom: 50px;
   }
 }
 .choose__content {
   max-width: 541px;
   width: 100%;
 }
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 700px) {
   .choose__content {
     text-align: center;
   }
@@ -171,6 +174,11 @@
   font-weight: 400;
   text-transform: capitalize;
   padding: 200px 0 60px;
+}
+@media screen and (max-width: 700px) {
+  .choose__content--title {
+    padding: 50px 0 50px;
+  }
 }
 .choose__content--text {
   font-family: "Josefin Sans", sans-serif;
@@ -188,6 +196,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+}
+@media screen and (max-width: 700px) {
+  .choose__image {
+    padding-top: 65px;
+  }
 }
 .choose__image img:first-child {
   margin-right: 125px;
@@ -219,6 +232,7 @@
 @media screen and (max-width: 1015px) {
   .place__inner {
     flex-direction: column;
+    padding: 0 0 50px;
   }
 }
 .place__line {
@@ -245,6 +259,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 1015px) {
+  .place__search, .place__select, .place__enjoy {
+    margin-top: 30px;
+  }
 }
 .place__text {
   font-family: "Aleo", serif;
@@ -302,12 +321,22 @@
   background-size: cover;
   padding: 120px 0 200px;
 }
+@media screen and (max-width: 535px) {
+  .say {
+    padding: 50px 0 50px;
+  }
+}
 .say__title {
   font-family: "Aleo", serif;
   font-size: 36px;
   font-weight: 400;
   text-align: center;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 535px) {
+  .say__title {
+    padding-bottom: 50px;
+  }
 }
 .say__content {
   display: flex;
@@ -316,6 +345,11 @@
   .say__content {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 535px) {
+  .say__content--img img {
+    width: 100%;
   }
 }
 .say__content--descr {
@@ -346,8 +380,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 268px;
+  padding: 120px 0 50px;
   font-family: "Josefin Sans", sans-serif;
+}
+@media screen and (max-width: 535px) {
+  .footer__inner {
+    padding: 50px 0 50px;
+  }
 }
 .footer__logo {
   font-size: 24px;
