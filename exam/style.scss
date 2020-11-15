@@ -211,19 +211,23 @@
 
 .place {
   background: #333333;
-  height: 337px;
 
   .container {
     width: 998px;
+    @media screen and (max-width: 1015px) {
+      width: auto;
+    }
   }
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //width: 1125px;
     position: relative;
-    padding-top: 20px;
+    padding: 20px 0 120px;
+    @media screen and (max-width: 1015px) {
+      flex-direction: column;
+    }
   }
 
   &__line {
@@ -231,6 +235,9 @@
     top: 40px;
     left: 103px;
     z-index: 1;
+    @media screen and (max-width: 1015px) {
+      display: none;
+    }
   }
 
   &__icon {
@@ -270,7 +277,8 @@
   padding-top: 230px;
 
   &__inner {
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
     height: 371px;
     display: flex;
     flex-direction: column;
@@ -308,7 +316,6 @@
 .say {
   background-image: url(image/section5-bg.jpg);
   background-size: cover;
-  height: 731px;
   padding: 120px 0 200px;
 
   &__title {
@@ -321,6 +328,10 @@
 
   &__content {
     display: flex;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     &--descr {
       display: flex;
@@ -333,6 +344,9 @@
 
     &--name {
       font-size: 20px;
+      @media screen and (max-width: 768px) {
+        padding-bottom: 30px;
+      }
     }
 
     &--text {
